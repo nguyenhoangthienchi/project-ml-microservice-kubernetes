@@ -6,10 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath="lqtoan20/project-devops"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login &&\
+    docker image tag project-devops $dockerpath
 
 # Step 3:
 # Push image to a docker repository
+docker image push $dockerpath
