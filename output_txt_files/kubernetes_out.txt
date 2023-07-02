@@ -1,1 +1,17 @@
-<paste log output from Kubernetes-mediated prediction, here>
+NAME             READY   STATUS    RESTARTS   AGE
+project-devops   1/1     Running   0          2m9s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+
+------------------------------------------------------------------
+Below is output when pod is running and prediction is made from different terminal by executing make_prediction.sh
+
+Port: 8000
+{
+    "prediction": [
+        20.35373177134412
+    ]
+}
