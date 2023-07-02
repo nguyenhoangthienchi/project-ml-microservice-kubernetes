@@ -12,7 +12,7 @@ dockerpath="jayesd3v/project-ml-microservice-kubernetes"
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login &&\
-    docker image tag project-devops $dockerpath
+    docker image tag project-ml-microservice-kubernetes $dockerpath
 
 # Step 3:
 # Push image to a docker repository
