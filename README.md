@@ -1,4 +1,4 @@
-[![lqtoan20](https://circleci.com/gh/lqtoan20/operationalize-a-ml-microservice-api.svg?style=svg)](https://app.circleci.com/pipelines/github/lqtoan20/operationalize-a-ml-microservice-api)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/nguyenhoangthienchi/project-ml-microservice-kubernetes/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/nguyenhoangthienchi/project-ml-microservice-kubernetes/tree/master)
 
 ## Project Overview
 

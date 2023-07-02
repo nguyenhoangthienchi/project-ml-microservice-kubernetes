@@ -6,9 +6,9 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath="lqtoan20/project-devops"
+dockerpath="jayesd3v/project-ml-microservice-kubernetes"
 
-# Step 2:  
+# Step 2:
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login &&\
