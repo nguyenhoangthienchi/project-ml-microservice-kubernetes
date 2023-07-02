@@ -1,0 +1,19 @@
+2023-07-03 03:30:14  * Serving Flask app "app" (lazy loading)
+2023-07-03 03:30:14  * Environment: production
+2023-07-03 03:30:14    WARNING: Do not use the development server in a production environment.
+2023-07-03 03:30:14    Use a production WSGI server instead.
+2023-07-03 03:30:14  * Debug mode: on
+2023-07-03 03:30:14  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+2023-07-03 03:30:14  * Restarting with stat
+2023-07-03 03:30:14  * Debugger is active!
+2023-07-03 03:30:14  * Debugger PIN: 318-360-028
+2023-07-03 03:30:40 [2023-07-02 20:30:40,446] INFO in app: JSON payload:
+2023-07-03 03:30:40 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+2023-07-03 03:30:40 [2023-07-02 20:30:40,454] INFO in app: Inference payload DataFrame:
+2023-07-03 03:30:40    CHAS     RM    TAX  PTRATIO      B  LSTAT
+2023-07-03 03:30:40 0     0  6.575  296.0     15.3  396.9   4.98
+2023-07-03 03:30:40 [2023-07-02 20:30:40,459] INFO in app: Scaling Payload:
+2023-07-03 03:30:40    CHAS     RM    TAX  PTRATIO      B  LSTAT
+2023-07-03 03:30:40 0     0  6.575  296.0     15.3  396.9   4.98
+2023-07-03 03:30:40 [2023-07-02 20:30:40,461] INFO in app: Output prediction: [20.35373177134412]
+2023-07-03 03:30:40 127.0.0.1 - - [02/Jul/2023 20:30:40] "POST /predict HTTP/1.1" 200 -
