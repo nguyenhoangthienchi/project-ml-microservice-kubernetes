@@ -66,16 +66,16 @@ source .devops/bin/activate
   - On Windows the best way is using Docker Desktop. Go into the setting -> Kubernetes -> Check on Enable Kubernetes.
   - Verify by `kubectl version --output json`
 - Create Flask app in Container
-  - First create an image: `docker build --tag project-ml:v1.0.0 .`
-  - Then run the container with created image: `docker run --detach --publish 8000:80 project-ml:v1.0.0`
+  - First create an image: `docker build --tag project-ml-microservice-kubernetes:v1 .`
+  - Then run the container with created image: `docker run --detach --publish 8000:80 project-ml-microservice-kubernetes:v1`
 - Run via kubectl
   - Create an environment file (.env) that contain your Docker password with the variable called MY_PASSWORD=<your-docker-hub-pw> then run: `source .env`
   - Export your docker hub ID: `export docker_path=<your-docker-hub-id>`
   - First need to log in with Docker Hub to push the image: `echo "$MY_PASSWORD" | docker login --username $docker_path --password-stdin`
-  - Then tag and push the image: `docker image tag project-devops:latest $docker_path/project-devops:latest && docker image push $docker_path/project-ml:v1.0.0`
-  - Finally, run: `kubectl create deploy project-devops --image="$docker_path/project-ml:v1.0.0"`
+  - Then tag and push the image: `docker image tag project-ml-microservice-kubernetes:v1 $docker_path/project-ml-microservice-kubernetes:latest && docker image push $docker_path/project-ml-microservice-kubernetes:latest`
+  - Finally, run: `kubectl create deploy project-ml-microservice-kubernetes --image="$docker_path/project-ml-microservice-kubernetes:v1"`
   - Check whether the pod is in READY state: `kubectl get pods`
-  - After the pod is in ready state forward the port: `kubectl port-forward project-devops 8000:80`
+  - After the pod is in ready state forward the port: `kubectl port-forward project-ml-microservice-kubernetes 8000:80`
 
 ### Description of the files
 
